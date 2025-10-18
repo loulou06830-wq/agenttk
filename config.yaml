@@ -1,0 +1,39 @@
+# config.yaml
+agent:
+  name: "AgentTK"
+  version: "1.0.0"
+  language: "fr"
+  mode: "interactive"
+
+ml:
+  enabled: true
+  auto_retrain: true
+  confidence_threshold: 0.7
+
+database:
+  path: "data/agent.db"
+  backup_enabled: true
+
+nlp:
+  confidence_threshold: 0.6
+  enable_spell_check: true
+
+skills:
+  enabled:
+    - "calculator"
+    - "time_skill"
+    - "task_manager"
+    - "file_manager"
+    - "system_info"
+    - "web_search"
+    - "knowledge"
+    - "personal"
+
+logging:
+  level: "DEBUG"
+  file: "logs/agent.log"
+
+ui:
+  theme: "dark"
+  window_width: 1000
+  window_height: 700
